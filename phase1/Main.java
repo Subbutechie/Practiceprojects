@@ -142,7 +142,7 @@ public class Main {
 				break;
 			case 4:
 				System.out.println("YOUR CURRENT WALLET BALANCE IS " +walletBalance);
-				System.out.println("Do you want to add balance to your wallet(1.YES/2.NO"));
+				System.out.println("Do you want to add balance to your wallet(1.YES/2.NO");
 				int opt = sc.nextInt();
 				if(opt == 1) {
 					System.out.println("Enter the amount to add: ");
