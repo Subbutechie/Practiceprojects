@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ming's Diner</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+   <style>
+    /* Custom CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+      background-color: #ff6347;
+    }
+    
+    .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    
+    .jumbotron {
+      background-image: url('background.jpg');
+      background-size: cover;
+      color: #ffffff;
+      padding: 150px 0;
+    }
+    
+    .jumbotron h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    
+    .jumbotron p {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    
+    .btn-primary {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #ff6347;
+      font-weight: bold;
+    }
+    
+    .btn-primary:hover {
+      background-color: #ff6347;
+      border-color: #ff6347;
+      color: #ffffff;
+    }
+    
+    #about {
+      background-color: #ffffff;
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    #about h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #ff6347;
+    }
+    
+    #menu {
+      background-color: #f8f9fa;
+      padding: 80px 0;
+    }
+    
+    #menu h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #ff6347;
+    }
+    
+    .card {
+      border: none;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .card-body {
+      padding: 20px;
+    }
+    
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .card-text {
+      font-size: 16px;
+    }
+    
+    #contact {
+      background-color: #ffffff;
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    #contact h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #ff6347;
+    }
+    
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .form-group label {
+      font-weight: bold;
+      color: #ff6347;
+    }
+    
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      color: #777777;
+    }
+  </style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Ming's Diner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="jumbotron text-center">
+    <h1>Welcome to Ming's Diner</h1>
+    <p>Experience the finest dining in town</p>
+    <a href="#menu" class="btn btn-primary btn-lg">View Menu</a>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="container">
+    <h2>About Ming's Diner</h2>
+    <p>Ming's Diner offers an authentic dining experience with a wide variety of delicious Chinese dishes prepared by skilled chefs.</p>
+  </section>
+
+  <!-- Menu section -->
+  <section id="menu" class="container">
+    <h2>Our Menu</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://unsplash.com/s/photos/noodles" class="card-img-top" alt="Image Description">
+          <div class="card-body">
+            <h5 class="card-title">Noodles</h5>
+            <p class="card-text">Delicious Noodles</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image2.jpg" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Sushi</h5>
+            <p class="card-text">Best Sushi in town 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image3.jpg" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Gobimanchrian</h5>
+            <p class="card-text">Eat untill full</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-light p-4">
+    &copy; 2023 Ming's Diner. All rights reserved.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
